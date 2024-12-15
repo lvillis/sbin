@@ -4,7 +4,7 @@ on:
   push:
 
 env:
-  CONTEXT: ./images
+  CONTEXT: .
 
 jobs:
   job1:
@@ -29,7 +29,7 @@ jobs:
         with:
           context: ${{ env.CONTEXT }}
           platforms: linux/amd64
-          file: docker-compose.Dockerfile
+          file: images/docker-compose.Dockerfile
           push: true
           cache-from: type=registry,ref=docker.io/lvillis/docker-compose:latest
           cache-to: type=inline
