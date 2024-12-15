@@ -27,3 +27,15 @@
 </div>
 
 ---
+
+## Usage
+
+```shell
+sbin <program>
+```
+
+or
+
+```shell
+docker run --rm -v /usr/local/bin:/usr/local/bin lvillis/sbin:latest <program>
+```
