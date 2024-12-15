@@ -2,14 +2,18 @@ name: Docker Publish
 
 on:
   push:
+    paths:
+      - 'images/**'
 
 env:
   CONTEXT: .
 
 jobs:
-  job1:
-    name: docker-compose
+  build-and-push:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        service: [docker-compose, uv, just, bat, bottom, bpftop, dust, eza, sd]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,238 +28,13 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
-      - name: Build and push
+      - name: Build and push ${{ matrix.service }}
         uses: docker/build-push-action@v6.10.0
         with:
           context: ${{ env.CONTEXT }}
           platforms: linux/amd64
-          file: images/docker-compose.Dockerfile
+          file: images/${{ matrix.service }}.Dockerfile
           push: true
-          cache-from: type=registry,ref=docker.io/lvillis/docker-compose:latest
+          cache-from: type=registry,ref=docker.io/lvillis/${{ matrix.service }}:latest
           cache-to: type=inline
-          tags: docker.io/lvillis/docker-compose:latest
-
-  job2:
-    name: uv
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3.7.1
-
-      - name: Login to registry
-        uses: docker/login-action@v3.3.0
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
-      - name: Build and push
-        uses: docker/build-push-action@v6.10.0
-        with:
-          context: ${{ env.CONTEXT }}
-          platforms: linux/amd64
-          file: images/uv.Dockerfile
-          push: true
-          cache-from: type=registry,ref=docker.io/lvillis/uv:latest
-          cache-to: type=inline
-          tags: docker.io/lvillis/uv:latest
-
-  job3:
-    name: just
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3.7.1
-
-      - name: Login to registry
-        uses: docker/login-action@v3.3.0
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
-      - name: Build and push
-        uses: docker/build-push-action@v6.10.0
-        with:
-          context: ${{ env.CONTEXT }}
-          platforms: linux/amd64
-          file: images/just.Dockerfile
-          push: true
-          cache-from: type=registry,ref=docker.io/lvillis/just:latest
-          cache-to: type=inline
-          tags: docker.io/lvillis/just:latest
-
-  job4:
-    name: bat
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3.7.1
-
-      - name: Login to registry
-        uses: docker/login-action@v3.3.0
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
-      - name: Build and push
-        uses: docker/build-push-action@v6.10.0
-        with:
-          context: ${{ env.CONTEXT }}
-          platforms: linux/amd64
-          file: images/bat.Dockerfile
-          push: true
-          cache-from: type=registry,ref=docker.io/lvillis/bat:latest
-          cache-to: type=inline
-          tags: docker.io/lvillis/bat:latest
-
-  job5:
-    name: bottom
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3.7.1
-
-      - name: Login to registry
-        uses: docker/login-action@v3.3.0
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
-      - name: Build and push
-        uses: docker/build-push-action@v6.10.0
-        with:
-          context: ${{ env.CONTEXT }}
-          platforms: linux/amd64
-          file: images/bottom.Dockerfile
-          push: true
-          cache-from: type=registry,ref=docker.io/lvillis/bottom:latest
-          cache-to: type=inline
-          tags: docker.io/lvillis/bottom:latest
-
-  job6:
-    name: bpftop
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3.7.1
-
-      - name: Login to registry
-        uses: docker/login-action@v3.3.0
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
-      - name: Build and push
-        uses: docker/build-push-action@v6.10.0
-        with:
-          context: ${{ env.CONTEXT }}
-          platforms: linux/amd64
-          file: images/bpftop.Dockerfile
-          push: true
-          cache-from: type=registry,ref=docker.io/lvillis/bpftop:latest
-          cache-to: type=inline
-          tags: docker.io/lvillis/bpftop:latest
-
-  job7:
-    name: dust
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3.7.1
-
-      - name: Login to registry
-        uses: docker/login-action@v3.3.0
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
-      - name: Build and push
-        uses: docker/build-push-action@v6.10.0
-        with:
-          context: ${{ env.CONTEXT }}
-          platforms: linux/amd64
-          file: images/dust.Dockerfile
-          push: true
-          cache-from: type=registry,ref=docker.io/lvillis/dust:latest
-          cache-to: type=inline
-          tags: docker.io/lvillis/dust:latest
-
-  job8:
-    name: eza
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3.7.1
-
-      - name: Login to registry
-        uses: docker/login-action@v3.3.0
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
-      - name: Build and push
-        uses: docker/build-push-action@v6.10.0
-        with:
-          context: ${{ env.CONTEXT }}
-          platforms: linux/amd64
-          file: images/eza.Dockerfile
-          push: true
-          cache-from: type=registry,ref=docker.io/lvillis/eza:latest
-          cache-to: type=inline
-          tags: docker.io/lvillis/eza:latest
-
-  job9:
-    name: sd
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3.7.1
-
-      - name: Login to registry
-        uses: docker/login-action@v3.3.0
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
-      - name: Build and push
-        uses: docker/build-push-action@v6.10.0
-        with:
-          context: ${{ env.CONTEXT }}
-          platforms: linux/amd64
-          file: images/sd.Dockerfile
-          push: true
-          cache-from: type=registry,ref=docker.io/lvillis/sd:latest
-          cache-to: type=inline
-          tags: docker.io/lvillis/sd:latest
-
+          tags: docker.io/lvillis/${{ matrix.service }}:latest
