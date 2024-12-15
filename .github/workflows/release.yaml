@@ -91,7 +91,7 @@ jobs:
           staging="sbin-${{ env.PROJECT_VERSION }}-${{ matrix.target }}"
           mkdir -p "$staging"
           
-          cp -r {README.md,LICENSE,CHANGELOG.md,gen/*} "$staging"
+          cp -r {README.md,LICENSE} "$staging"
           if [ "${{ matrix.os }}" = "windows-latest" ]; then
             cp "target/${{ matrix.target }}/release/sbin.exe" "$staging/"
             7z a "$staging.zip" "$staging"
