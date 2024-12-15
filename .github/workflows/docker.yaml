@@ -146,3 +146,33 @@ jobs:
           cache-from: type=registry,ref=docker.io/lvillis/bottom:latest
           cache-to: type=inline
           tags: docker.io/lvillis/bottom:latest
+
+  job6:
+    name: bpftop
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3.7.1
+
+      - name: Login to registry
+        uses: docker/login-action@v3.3.0
+        with:
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6.10.0
+        with:
+          context: ${{ env.CONTEXT }}
+          platforms: linux/amd64
+          file: images/bpftop.Dockerfile
+          push: true
+          cache-from: type=registry,ref=docker.io/lvillis/bpftop:latest
+          cache-to: type=inline
+          tags: docker.io/lvillis/bpftop:latest
+
+
