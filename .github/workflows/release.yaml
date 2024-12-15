@@ -93,7 +93,7 @@ jobs:
         shell: bash
         run: |
           $CARGO --version
-          $CARGO build --release --locked --target ${{ matrix.target }}
+          $CARGO build --release --target ${{ matrix.target }}
           # Handle windows being an oddity
           if [ "${{ matrix.os }}" = "windows-latest" ]; then
             echo "BIN_NAME=sbin.exe" >> $GITHUB_ENV
