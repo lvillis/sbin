@@ -9,7 +9,6 @@ RUN set -ex \
 
 WORKDIR /opt/app
 
-COPY bin/ /opt/app/bin/
 COPY Cargo.toml /opt/app/Cargo.toml
 
 RUN mkdir -p /opt/app/src && echo "fn main() {}" > /opt/app/src/main.rs
