@@ -2,11 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.19] - 2024-12-17
+
+### ⚙️ Miscellaneous Tasks
+
+- *(ci)* Use softprops/action-gh-release@v2
+
 ## [0.1.18] - 2024-12-17
 
 ### ⚙️ Miscellaneous Tasks
 
 - Bump serde version from 1.0 to 1.0.216
+- Release sbin version 0.1.18
 
 ## [0.1.17] - 2024-12-17
 
