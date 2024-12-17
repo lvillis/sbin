@@ -2,11 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.16] - 2024-12-17
+
+### 🐛 Bug Fixes
+
+- Ci
+
 ## [0.1.15] - 2024-12-17
 
 ### ⚙️ Miscellaneous Tasks
 
 - *(ci)* Use softprops/action-gh-release
+- Release sbin version 0.1.15
 
 ## [0.1.14] - 2024-12-17
 
