@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.14] - 2024-12-17
+
+### 🚀 Features
+
+- Add macOS x86_64 and aarch64 targets
+
 ## [0.1.13] - 2024-12-16
 
 ### 🚀 Features
@@ -18,6 +24,7 @@ All notable changes to this project will be documented in this file.
 - *(docs)* Update README.md
 - Add exclude
 - *(docs)* Update README.md
+- Release sbin version 0.1.13
 
 ## [0.1.5] - 2024-12-15
 
