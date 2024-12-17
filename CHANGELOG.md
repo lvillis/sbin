@@ -2,11 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.15] - 2024-12-17
+
+### ⚙️ Miscellaneous Tasks
+
+- *(ci)* Use softprops/action-gh-release
+
 ## [0.1.14] - 2024-12-17
 
 ### 🚀 Features
 
 - Add macOS x86_64 and aarch64 targets
+
+### ⚙️ Miscellaneous Tasks
+
+- Release sbin version 0.1.14
 
 ## [0.1.13] - 2024-12-16
 
