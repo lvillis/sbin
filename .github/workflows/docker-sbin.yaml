@@ -2,6 +2,8 @@ name: Docker Publish sbin
 
 on:
   push:
+    branches:
+      - main
 
 env:
   CONTEXT: .
