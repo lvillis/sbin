@@ -2,11 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.17] - 2024-12-17
+
+### 🐛 Bug Fixes
+
+- Ci
+
 ## [0.1.16] - 2024-12-17
 
 ### 🐛 Bug Fixes
 
 - Ci
+
+### ⚙️ Miscellaneous Tasks
+
+- Release sbin version 0.1.16
 
 ## [0.1.15] - 2024-12-17
 
