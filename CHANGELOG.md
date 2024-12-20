@@ -2,11 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.20] - 2024-12-20
+
+### 🚀 Features
+
+- Add kyanos
+
 ## [0.1.19] - 2024-12-17
 
 ### ⚙️ Miscellaneous Tasks
 
 - *(ci)* Use softprops/action-gh-release@v2
+- Release sbin version 0.1.19
 
 ## [0.1.18] - 2024-12-17
 
