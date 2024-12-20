@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        service: [docker-compose, uv, just, bat, bottom, bpftop, dust, eza, sd]
+        service: [docker-compose, uv, just, bat, bottom, bpftop, dust, eza, sd, kyanos]
     steps:
       - name: Checkout
         uses: actions/checkout@v4

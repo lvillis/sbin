@@ -22,6 +22,7 @@ const MANAGED_PROGRAMS: &[&str] = &[
     "dust",
     "eza",
     "just",
+    "kyanos",
     "sd",
     "uv",
 ];
