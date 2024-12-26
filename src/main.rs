@@ -17,6 +17,7 @@ use tabled::{Table, Tabled};
 const MANAGED_PROGRAMS: &[&str] = &[
     "bat",
     "bottom",
+    "bpftool",
     "bpftop",
     "docker-compose",
     "dust",
