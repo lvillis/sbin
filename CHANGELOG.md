@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.22] - 2024-12-26
+
+### ⚙️ Miscellaneous Tasks
+
+- *(docs)* Update README.md
+
 ## [0.1.21] - 2024-12-26
 
 ### 🚀 Features
@@ -11,6 +17,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - *(docs)* Update README.md
+- Release sbin version 0.1.21
 
 ## [0.1.20] - 2024-12-20
 
