@@ -2,11 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.21] - 2024-12-26
+
+### 🚀 Features
+
+- Add bpftool
+
+### ⚙️ Miscellaneous Tasks
+
+- *(docs)* Update README.md
+
 ## [0.1.20] - 2024-12-20
 
 ### 🚀 Features
 
 - Add kyanos
+
+### ⚙️ Miscellaneous Tasks
+
+- Release sbin version 0.1.20
 
 ## [0.1.19] - 2024-12-17
 
