@@ -28,6 +28,21 @@
 
 ---
 
+|      Name      |                                             Pulls                                             |                                                                      Size                                                                      |
+|:--------------:|:---------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------:|
+|      bat       |      ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/bat?style=flat-square)       |      [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/bat/latest?style=flat-square)](https://hub.docker.com)       |
+|     bottom     |     ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/bottom?style=flat-square)     |     [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/bottom/latest?style=flat-square)](https://hub.docker.com)     |
+|    bpftool     |    ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/bpftool?style=flat-square)     |    [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/bpftool/latest?style=flat-square)](https://hub.docker.com)     |
+|     bpftop     |     ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/bpftop?style=flat-square)     |     [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/bpftop/latest?style=flat-square)](https://hub.docker.com)     |
+| docker-compose | ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/docker-compose?style=flat-square) | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/docker-compose/latest?style=flat-square)](https://hub.docker.com) |
+|      dust      |      ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/dust?style=flat-square)      |      [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/dust/latest?style=flat-square)](https://hub.docker.com)      |
+|      eza       |      ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/eza?style=flat-square)       |      [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/eza/latest?style=flat-square)](https://hub.docker.com)       |
+|      just      |      ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/just?style=flat-square)      |      [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/just/latest?style=flat-square)](https://hub.docker.com)      |
+|     kyanos     |     ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/kyanos?style=flat-square)     |     [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/kyanos/latest?style=flat-square)](https://hub.docker.com)     |
+|       sd       |       ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/sd?style=flat-square)       |       [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/sd/latest?style=flat-square)](https://hub.docker.com)       |
+|       uv       |       ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/uv?style=flat-square)       |       [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/uv/latest?style=flat-square)](https://hub.docker.com)       |
+
+
 ## Usage
 
 ```shell
