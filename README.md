@@ -28,6 +28,20 @@
 
 ---
 
+## Usage
+
+```shell
+sbin <program>
+```
+
+or
+
+```shell
+docker run --rm -v /usr/local/bin:/usr/local/bin lvillis/sbin:latest <program>
+```
+
+## Programs
+
 |      Name      |                                             Pulls                                             |                                                                      Size                                                                      |
 |:--------------:|:---------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------:|
 |      bat       |      ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/bat?style=flat-square)       |      [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/bat/latest?style=flat-square)](https://hub.docker.com)       |
@@ -43,14 +57,3 @@
 |       uv       |       ![Docker Pulls](https://img.shields.io/docker/pulls/lvillis/uv?style=flat-square)       |       [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lvillis/uv/latest?style=flat-square)](https://hub.docker.com)       |
 
 
-## Usage
-
-```shell
-sbin <program>
-```
-
-or
-
-```shell
-docker run --rm -v /usr/local/bin:/usr/local/bin lvillis/sbin:latest <program>
-```
