@@ -2,11 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.23] - 2024-12-27
+
+### 🚀 Features
+
+- Add tcping
+- Add motdyn
+
 ## [0.1.22] - 2024-12-26
 
 ### ⚙️ Miscellaneous Tasks
 
 - *(docs)* Update README.md
+- Release sbin version 0.1.22
 
 ## [0.1.21] - 2024-12-26
 
