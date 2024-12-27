@@ -25,6 +25,7 @@ const MANAGED_PROGRAMS: &[&str] = &[
     "just",
     "kyanos",
     "sd",
+    "tcping",
     "uv",
 ];
 
