@@ -24,6 +24,7 @@ const MANAGED_PROGRAMS: &[&str] = &[
     "eza",
     "just",
     "kyanos",
+    "motdyn",
     "sd",
     "tcping",
     "uv",
