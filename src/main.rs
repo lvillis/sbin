@@ -19,6 +19,7 @@ const MANAGED_PROGRAMS: &[&str] = &[
     "bottom",
     "bpftool",
     "bpftop",
+    "cargo-proxy",
     "docker-compose",
     "dust",
     "eza",
