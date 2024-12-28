@@ -2,12 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.24] - 2024-12-28
+
+### 🚀 Features
+
+- Add cargo-proxy
+
 ## [0.1.23] - 2024-12-27
 
 ### 🚀 Features
 
 - Add tcping
 - Add motdyn
+
+### ⚙️ Miscellaneous Tasks
+
+- Release sbin version 0.1.23
 
 ## [0.1.22] - 2024-12-26
 
