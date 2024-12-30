@@ -2,11 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.25] - 2024-12-30
+
+### ⚙️ Miscellaneous Tasks
+
+- Add author
+
 ## [0.1.24] - 2024-12-28
 
 ### 🚀 Features
 
 - Add cargo-proxy
+
+### ⚙️ Miscellaneous Tasks
+
+- Release sbin version 0.1.24
 
 ## [0.1.23] - 2024-12-27
 
