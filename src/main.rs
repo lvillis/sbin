@@ -33,13 +33,15 @@ const MANAGED_PROGRAMS: &[&str] = &[
 
 const UNVERSIONED_PROGRAMS: &[&str] = &[
     "bpftop",
+    "kyanos,"
 ];
 
 #[derive(Parser, Debug)]
 #[command(
-    name = "sbin",
-    about = "Fetch specified programs from Docker registry and install them to /usr/local/bin",
-    version = env!("CARGO_PKG_VERSION"),
+    author,
+    version,
+    about,
+    long_about = None,
     subcommand_required = true,
     arg_required_else_help = true,
 )]
