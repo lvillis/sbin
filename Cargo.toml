@@ -36,7 +36,7 @@ tar = "0.4"
 flate2 = "1.0"
 anyhow = "1.0"
 semver = "1.0.24"
-tabled = "0.17.0"
+tabled = "0.19.0"
 
 [package.metadata.release]
 tag-prefix = ""
