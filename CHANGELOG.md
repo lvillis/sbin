@@ -2,11 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.26] - 2025-04-28
+
+### 🚀 Features
+
+- Remove bpftop special-case; enable --version detection
+
+### ⚙️ Miscellaneous Tasks
+
+- *(ci)* Update dependabot.yml
+
 ## [0.1.25] - 2024-12-30
 
 ### ⚙️ Miscellaneous Tasks
 
 - Add author
+- Release sbin version 0.1.25
 
 ## [0.1.24] - 2024-12-28
 
