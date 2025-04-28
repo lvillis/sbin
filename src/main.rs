@@ -32,8 +32,7 @@ const MANAGED_PROGRAMS: &[&str] = &[
 ];
 
 const UNVERSIONED_PROGRAMS: &[&str] = &[
-    "bpftop",
-    "kyanos,"
+    "kyanos"
 ];
 
 #[derive(Parser, Debug)]
