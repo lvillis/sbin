@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - *(ci)* Update dependabot.yml
+- Release sbin version 0.1.26
 
 ## [0.1.25] - 2024-12-30
 

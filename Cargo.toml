@@ -1,7 +1,7 @@
 [package]
 name = "sbin"
 description = "🛠️ Fetches and updates binaries from Docker images—simple, fast, Rust-powered."
-version = "0.1.26"
+version = "0.1.27"
 edition = "2021"
 license = "MIT"
 authors = ["lvillis<lvillis@outlook.com>"]
