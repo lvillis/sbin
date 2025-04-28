@@ -10,7 +10,7 @@ updates:
 
   - package-ecosystem: "cargo"
     directories:
-      - "/sbin"
+      - "/"
     schedule:
       interval: "daily"
       time: "07:00"
