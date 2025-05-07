@@ -29,6 +29,7 @@ const MANAGED_PROGRAMS: &[&str] = &[
     "sd",
     "tcping",
     "uv",
+    "za"
 ];
 
 const UNVERSIONED_PROGRAMS: &[&str] = &[
