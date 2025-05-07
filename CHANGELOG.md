@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.28] - 2025-05-07
+
+### ⚙️ Miscellaneous Tasks
+
+- Add za
+
+## [0.1.27] - 2025-04-28
+
+### ⚙️ Miscellaneous Tasks
+
+- Release sbin version 0.1.27
+
 ## [0.1.26] - 2025-04-28
 
 ### 🚀 Features
