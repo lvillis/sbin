@@ -18,7 +18,7 @@ jobs:
         service: [docker-compose, uv, just, bat, bottom, bpftop, dust, eza, sd, kyanos, bpftool]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3.10.0
